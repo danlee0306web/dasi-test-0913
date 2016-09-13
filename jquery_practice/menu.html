@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../assets/fontawesome/css/font-awesome.css">
+    <script src="../assets/js/jquery-3.1.0.min.js"></script>
+  </head>
+  <script>
+  $(function(){
+    $('.icon').click(function(){
+      $('#menu').slideToggle();
+    });//End Click
+  });//End document ready
+  </script>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+  }
+  .icon{
+    width: 100%;
+    height: 40px;
+    line-height: 50px;
+    background: #d077f4;
+    padding: 5px;
+  }
+  #menu{
+    display: none;
+  }
+  #menu>li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #faaae8;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(242, 51, 103);
+  }
+  @media screen and (min-width: 481px){
+     .icon{
+       display: none;
+     }
+     #menu{
+       display: none;
+     }
+  }
+  </style>
+  <body>
+    <div class="icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+    <ul id="menu">
+      <li>Home</li>
+      <li>News</li>
+      <li>Products</li>
+      <li>Contact</li>
+      <li>Service</li>
+    </ul>
+  </body>
+</html>

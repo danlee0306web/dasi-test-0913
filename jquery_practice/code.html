@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Test</title>
+    <script src="../assets/js/jquery-3.1.0.min.js"></script>
+  </head>
+  <script>
+  $(function(){
+    $('a').click(function(){
+      $('h1').animate({"margin-left":"300px"},1000);
+    });//End Click
+
+  });//End document ready
+  </script>
+  <body>
+    <h1>This is Event</h1>
+    <a href="#">請點我</a>
+  </body>
+</html>
